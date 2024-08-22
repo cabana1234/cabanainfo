@@ -8,12 +8,15 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <h2>Documentos PDF</h2>
+        <h2>Documentos y Reportes</h2>
         <div>
-            <button onclick="loadPDF('descarga.pdf')">Ver Documento 1</button>
+            <button onclick="loadPDF('document1.pdf')">Ver Documento 1</button>
             <button onclick="loadPDF('document2.pdf')">Ver Documento 2</button>
+            <!-- Botón para cargar el reporte de Power BI -->
+            <button onclick="loadPowerBIReport()">Ver Reporte de Power BI</button>
         </div>
-        <iframe id="pdfViewer" width="100%" height="600px"></iframe>
+        <!-- iframe para mostrar PDFs o el reporte de Power BI -->
+        <iframe id="viewer" width="100%" height="600px"></iframe>
     </div>
 
     <script src="script.js"></script>
