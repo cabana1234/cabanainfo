@@ -13,8 +13,16 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
 });
 
-// Load PDF Functionality for Dashboard
+// Función para cargar archivos PDF en el visor
 function loadPDF(pdfFile) {
-    const pdfViewer = document.getElementById("pdfViewer");
-    pdfViewer.src = pdfFile;
+    const viewer = document.getElementById("viewer");
+    viewer.src = pdfFile;
 }
+
+// Función para cargar el reporte de Power BI
+function loadPowerBIReport() {
+    const powerBIUrl = "https://app.powerbi.com/view?r=tu_link_aqui"; // Reemplaza con el enlace de tu reporte
+    const viewer = document.getElementById("viewer");
+    viewer.src = powerBIUrl;
+}
+
